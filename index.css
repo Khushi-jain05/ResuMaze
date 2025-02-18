@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    
+}
+body{
+    background-color:rgba(98, 102, 98, 0.325);
+   
+
+}
+/* nav-bar */
+#desktop-bar{
+    background-color:rgb(3, 39, 56) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 80%;
+}
+.logo{
+font-size: 3rem ;
+color: white;
+margin-left: 10px;
+padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 4rem;
+    margin-right: 100px;
+   
+}
+#btns{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+   border: none;
+   font-weight: bold;
+   font-size: 13.5px;
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size:1.3rem ;
+}
+ul{
+    list-style: none;
+}
+
+/*  */
+.tagline{
+    
+    color: rgb(2, 35, 51);
+    font-size: 1.5rem;
+    
+}
+.tagline-img{
+    width: 260px;
+    
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(60, 82, 82);
+
+    
+}
+
+.container-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.about-website{
+    width: 500px;
+    font-size: 1.3rem;
+    
+    margin-top: 20px;
+}
+
+.btns-1{
+   margin-top: 50px;
+    margin-left: 30px;
+    width:200px ;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color:rgb(2, 35, 51) ;
+    color: white;
+    box-shadow: 10px 10px 20px rgb(60, 82, 82);
+
+}
+.Create-resume{
+    display: flex;
+    margin-top: 110px;
+}
+.create-text{
+    font-size: 40px;
+}
+.arrow{
+    width: 100px;
+    margin-left: 50px;
+    
+}
+.convert{
+    width: 60px;
+    
+   
+    margin-top: 30px;
+   
+}
+.col-para{
+    width:200px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.col-heading{
+    margin-top: 13px;
+}
+.clock{
+    width: 40px;
+    
+}
+.skill{
+    width: 40px;
+    border-radius: 10px;
+    
+}
+.background-circle{
+    
+    
+        background-color: white;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+       
+       
+
+}
+.container{
+    margin-left: 175px;
+    margin-right: 175px;
+
+}
+.container-mid{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 70px;
+}
+.resume-line{
+    width: 150px;
+   
+    margin-left: 110px;
+    border: 3px solid rgb(6, 61, 82) ;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(60, 82, 82);
+}
+.container-mid-2{
+    background-color:rgb(4, 25, 34) ;
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center ;
+    
+
+}
+.container-mid-2-img{
+    width: 600px;
+    height: 500px;
+    
+}
+.container-mid-2-text{
+color: white;
+width: 500px;
+margin-left: 180px;
+font-size: 2rem;
+
+}
+.btns-2{
+    width:200px ;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color:rgb(252, 252, 252) ;
+    color: rgb(3, 39, 56);
+    font-weight: bold;
+    margin-top: 110px;
+    box-shadow: 10px 10px 15px rgb(138, 205, 188);
+}
+.btns-3{
+    width:200px ;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color:rgb(3, 39, 56);
+    color: white;
+    box-shadow: 10px 10px 15px rgb(60, 82, 82);
+    margin-top: 40px;
+}
+.heading{
+    font-size: 45px;
+    width: 50%;
+    text-align: center;
+    color: rgb(3, 39, 56) ;
+    margin-top: 70px;
+    margin-left: 25%;
+}
+.templates{
+    display: flex;
+    justify-content: space-between;
+}
+.template-1{
+    width: 25%;
+    margin-left: 30px;
+    filter: drop-shadow(10px 20px 10px rgb(60, 82, 82)) 
+    
+}
+.template-1-title{
+   margin-right: 400px; 
+   margin-top: 200px;
+   font-size: 35px;
+   color:rgb(3, 39, 56);
+  
+}
+.template-1-text{
+    font-size: 24px;
+    width: 70%;
+    margin-top: 10px;
+   
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+.footer-logo{
+    color: white;
+}
+
+/* Animation */
+/* @keyframes slide-in {
+    from{
+transform: translateX(300px);
+opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+opacity: 1;
+    }
+    
+} */
