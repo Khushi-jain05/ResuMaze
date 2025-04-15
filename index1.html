@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ResuMaze</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    
+    <div class="container" id="cv-form"><h1 class="text-center my-9">Resumaze</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Personal Information </h3>
+                <div class="form-group">
+                     <label for="nameField">Your Name</label>
+                     <input type="text" id="nameField"class="form-control" placeholder="Enter Here">
+                     
+                </div>
+                <div class="form-group mt-4">
+                    <label for="contactField">Your Contact Number</label>
+                    
+                    <input type="text" id="contactField" class="form-control" placeholder="Enter Here">
+
+               </div>
+               <div class="form-group mt-4">
+                <label for="emailField">Your Email Address</label>
+                <input type="text" id="addressField"class="form-control" placeholder="Enter Here">
+               </div>
+               <div class="from-group">
+                <label for="">Select Your</label>
+                <input type="file" id="imgField" class="form-control">
+               </div>
+               <p class="text-secondary my-3 ">Important Links</p>
+        <div class="form-group mt-4">
+                <label for="linkField">Link-1</label>
+                <input type="text" id="linkField1"class="form-control" placeholder="Enter Here">
+        </div>
+        <div class="form-group mt-4">
+            <label for="linkField">Link-2</label>
+            <input type="text" id="linkField2"class="form-control" placeholder="Enter Here">
+        </div>
+        <div class="form-group mt-4">
+            <label for="linkField">Link-3</label>
+            <input type="text" id="linkField3"class="form-control" placeholder="Enter Here">
+        </div>
+        </div>
+            <div class="col-md-6">
+                <h3 class="text-center">Professional Information </h3>
+                <div class="form-group mt-2">
+                    <label for="objectiveField">Objective</label>
+                    <textarea id="objectiveField" class="form-control " placeholder="Enter Here" ></textarea>
+                </div>
+                <div class="form-group mt-4" id="we" >
+                    <label for="workField">Work Experience</label>
+                    <textarea class="form-control weField" placeholder="Enter Here" id="workField" rows="3"></textarea>
+
+                     <div class="conatiner text-center mt-3  "id="weAddButton">
+                        <button onclick="addNewWeField()"  class="btn btn-primary btn-sm background border-0">Add</button>
+                     </div>
+                </div>
+                <div class="form-group mt-4" id="aq">
+                    <label for="academicField">Academic Qualification</label>
+                    <textarea class="form-control aqField" placeholder="Enter Here" id="academicField" rows="3"></textarea>
+                     <div class="conatiner text-center mt-3" id="aqAddButton">
+                        <button  onclick="addNewAQField()" class="btn btn-primary btn-sm background  border-0">Add</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+       <div class="container text-center mt-5">
+        <button class="btn btn-primary btn-lg background  border-0" onclick="generateCV()">Generate CV</button>
+         </div>
+    </div>
+    <div class="container mt-5" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background mt-4"  >
+                <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" 
+                alt="" class="img-fluid myimg" id="imgTemplate">
+                <div class="container mt-3" id="info">
+                    <p id="nameT1">Aman Kumar Tiwari</p>
+                    <p id="contactT">+917365483469,+918764563789</p>
+                    <p id="addressT">3847876/983478 Sector 35 Noida ,INDIA</p>
+                    <hr/>
+                    <p id="linkT"><a href="#1">......links......</a></p>
+                    <p id="linkT1"><a href="#1">......links......</a></p>
+                    <p id="linkT2"><a href="#1">......links......</a></p>
+
+    
+                </div>
+            </div>
+            
+            <div class="col-md-8 mt-3">
+                <h1 class="text-center" style="font-weight: 980;" id="nameT2">Aman Kumar Tiwari </h1>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima 
+                            necessitatibus architecto est dignissimos nesciunt optio ut cumque
+                            doloremque harum maiores repellat inventore, aperiam minus, sapiente iste sed, 
+                            rerum at ex?</p>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT" >
+                            <li>
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                             </li>
+                              <li>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                             </li>
+                              <li>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, ut.
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="containe mt-5 text-center">
+                    <button onclick="printCV()" class="btn background" id="printCV">Print CV</button>
+                </div>
+
+            </div>
+            
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>

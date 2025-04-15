@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register</title>
+  <link rel="stylesheet" href="index2.css" />
+</head>
+<body>
+  
+
+     
+  <div class="container">
+    <div class="left-panel">
+      <div class="form-section active" id="login-section">
+        <div class="logo">Log In</div>
+        <h2>Welcome Back</h2>
+        <input type="email" id="login-email" placeholder="Your Email" />
+        <input type="password" id="login-password" placeholder="Your Password" />
+        <button onclick="loginUser()">Log In</button>
+        <div class="switch">Don’t have an account? <a onclick="toggleToRegister()">Sign up</a></div>
+      </div>
+      <div class="form-section" id="register-section">
+        <div class="logo">Register</div>
+        <h2>Create Account</h2>
+        <input type="text" id="reg-username" placeholder="Username" />
+        <input type="email" id="reg-email" placeholder="Email" />
+        <input type="password" id="reg-password" placeholder="Password" />
+        <button onclick="registerUser()">Sign Up</button>
+        <div class="switch">Already have an account? <a onclick="toggleToLogin()">Login</a></div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <img src="logo.png" class="img">
+      
+      
+    </div>
+  </div>
+  <script src="index2.js"></script>
+  
+  
+<body>
+  

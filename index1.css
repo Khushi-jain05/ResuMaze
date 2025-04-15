@@ -1,0 +1,110 @@
+/* #cv-form{ */
+    /* display: none; */
+
+    .myimg{
+        /* border:1px solid red; */
+        border-radius:50%;
+        width: 200px;
+    }
+    body{
+        background-color: rgba(98, 102, 98, 0.325);
+    }
+    .background{
+        background-color: rgb(3, 39, 56);
+        /* filter: drop-shadow(10px 5px 10px rgb(60, 82, 82))  */
+    }
+    label{
+        color:rgb(3, 39, 56);
+        font-weight: bold;
+    }
+    .card-header{
+        color:white
+    }
+                       
+    #printCV{
+        color: white;
+        filter: drop-shadow(10px 10px 10px rgb(60, 82, 82)) ;
+        width:120px;
+        padding: 12px;
+        font-size: 17px;
+    }
+    
+    h1{
+        font-weight: bold;
+        color:rgb(3, 39, 56) ;
+    }
+    #info{
+        color: white;
+    }
+    a{
+        color: white;
+    } 
+    
+    #cv-template{
+        padding-bottom: 30px;
+    }
+    
+    
+    @media print {
+        
+        body {
+            zoom: 1; 
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    
+       
+        #cv-template {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            max-height: 100vh;  
+            overflow: hidden;
+            page-break-inside: avoid;
+        }
+    
+        
+        #left-column {
+            width: 30%;
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    
+        
+        #right-column {
+            width: 70%;
+            padding: 10px;
+        }
+    
+        
+        .myimg {
+            width: 200px; 
+            height: 300px;
+            
+            object-fit: cover;
+        }
+    
+        
+        h1, h3 {
+            font-size: 19px;
+            font-weight: bold;
+        }
+    
+        p, li {
+            font-size: 15px;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+    
+        .card {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    
+        
+        #printCV {
+            display: none;
+        }
+    }
+    

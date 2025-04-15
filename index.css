@@ -1,9 +1,11 @@
+
 *{
     margin: 0;
     
 }
 body{
     background-color:rgba(98, 102, 98, 0.325);
+    overflow-x: hidden;
    
 
 }
@@ -19,7 +21,7 @@ body{
 .logo{
 font-size: 3rem ;
 color: white;
-margin-left: 10px;
+margin-left: 100px;
 padding: 20px;
 }
 
@@ -75,7 +77,17 @@ ul{
     
     margin-top: 20px;
 }
+#btns1{
+    color:white
+    
+}
 
+#btns1:hover{
+    color:rgb(151, 148, 148)
+}
+button{
+    cursor: pointer;
+}
 .btns-1{
    margin-top: 50px;
     margin-left: 30px;
@@ -89,6 +101,8 @@ ul{
     box-shadow: 10px 10px 20px rgb(60, 82, 82);
 
 }
+   
+
 .Create-resume{
     display: flex;
     margin-top: 110px;
@@ -172,12 +186,15 @@ ul{
 .container-mid-2-img{
     width: 600px;
     height: 500px;
+    margin-right: 100px;
+    
+    
     
 }
 .container-mid-2-text{
 color: white;
 width: 500px;
-margin-left: 180px;
+margin-left: 100px;
 font-size: 2rem;
 
 }
@@ -218,12 +235,12 @@ font-size: 2rem;
 }
 .template-1{
     width: 25%;
-    margin-left: 30px;
+    margin-left: 100px;
     filter: drop-shadow(10px 20px 10px rgb(60, 82, 82)) 
     
 }
 .template-1-title{
-   margin-right: 400px; 
+   
    margin-top: 200px;
    font-size: 35px;
    color:rgb(3, 39, 56);
@@ -235,25 +252,106 @@ font-size: 2rem;
     margin-top: 10px;
    
 }
+/* .template-text{
+    margin-right: 100px;
+} */
 .footer{
     background-color: black;
     width: 100%;
     height: 400px;
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .footer-logo{
     color: white;
+    font-size: 44px;
+    font-weight: lighter;
+    margin-left: 100px;
+   padding-top: 100px
+}
+#footer-para{
+    color: white;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.email{
+    border: 2px rgb(89, 88, 88) solid;
+    background-color: transparent;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 130px;
+    margin-right: 100px;
+   
+}
+.follow{
+    color: white;
+    margin-right: 200px;
+    
 }
 
-/* Animation */
-/* @keyframes slide-in {
-    from{
-transform: translateX(300px);
-opacity: 0;
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%); 
+        opacity: 0;
     }
-    to{
-        transform: translateX(0px);
-opacity: 1;
+    to {
+        transform: translateX(0); 
+        opacity: 1;
     }
+}
+.main-container-right{
+    animation: slideInRight 1s ease-in-out;
+}
+#btns:hover{
+    cursor: pointer;
+    background-color:black;
+    color:white
+}
+a:hover{
+    cursor: pointer;
     
-} */
+   
+}
+.btns-1:hover{
+cursor: pointer;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container-mid{
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+.container-mid:nth-child(1) { animation-delay: 0.2s; }
+.container-mid:nth-child(2) { animation-delay: 0.4s; }
+.container-mid:nth-child(3) { animation-delay: 0.6s; }
+.container-mid:nth-child(4) { animation-delay: 0.8s; }
+.container-mid:nth-child(5) { animation-delay: 1s; }
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.container-mid-2-img{
+    animation: zoomIn 1s ease-out forwards;
+}

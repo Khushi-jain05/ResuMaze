@@ -1,19 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+    
+    <title>ResuMaze</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
+    
     <nav id="desktop-bar">
         <div class="logo">ResuMaze</div>
         <div class="Login">
             <ul class="nav-links">
-              <li><a href="#login">Login</a></li>
-              <!-- <li><button  id="btns">Free trial</button></li> -->
+              <li> <a id="btns1" href="index2.html">Login</a></li>
+              
               <li><button  id="btns">Sign in</button></li>
             </ul>
         </div>
@@ -27,7 +30,9 @@
             <div  class="Create-resume">
                 <h1 class="create-text">Create a resume<br> that gets results<hr class="resume-line"></h1>
                 <img class="arrow" src="arrow-move-down-right.svg">
-                <button class="btns-1" >Create Resume</button>
+                
+                <button class="btns-1" onclick="handleResumeClick()">Create Resume</button>
+
             </div>
         </div>
         <div class="main-container-right">
@@ -72,17 +77,34 @@
 <div class="templates">
     
         <img src="image-1.webp" class="template-1">
-        <div>
+        <div class="template-text">
             <h2 class="template-1-title">Import Your Resume</h2>
             <p class="template-1-text">Create your resume from scratch, or you can start by uploading your own resume.</p>
             <button class="btns-3">Resume</button>
         </div>
 
 </div>
-<div class="footer">
-    <h2 class="footer-logo">ResuMaze</h2>
 
+<div class="footer">
+    <div ><h2 class="footer-logo">ResuMaze</h2>
+   <p id="footer-para"> Developed an automated resume generator that dynamically creates professional resumes.</p></div>
+
+
+   
+  <div> <input type="email" placeholder="Your E-mail" class="email"></div>
+  <div><pclass="follow">Follow us</p></div>
 </div>
+<script>
+    function handleResumeClick() {
+      const isLoggedIn = localStorage.getItem('isLoggedIn');
+      if (isLoggedIn === 'true') {
+        window.location.href = 'index1.html';
+      } else {
+        alert('Please login first to create a resume.');
+        window.location.href = 'index2.html';
+      }
+    }
+  </script>
 
 
 
